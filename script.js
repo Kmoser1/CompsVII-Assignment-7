@@ -39,12 +39,19 @@ let friendFavorites = [
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
 // [I'm going to ignore the example, since Pizza has an "a" in the final letter of the string]
-
-
+for (let i = 0; i <= friendFavorites.length-1; i++) {
+  if (friendFavorites[i].includes("a")) (
+    console.log(friendFavorites[i])
+  )
+}
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
-
-
+let foodsWithA = [];
+for (let i = 0; i <= friendFavorites.length-1; i++) {
+  if (friendFavorites[i].includes("a")) (
+    foodsWithA.push(friendFavorites[i]));
+  }
+console.log(foodsWithA)
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
 
