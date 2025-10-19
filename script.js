@@ -1,6 +1,6 @@
 console.log("Hello World!");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
-
+let favFoods = ["raw isolated taurine", "isolated L-Carnitine", "isolated Inositol", "isolated Panax Ginseng Extract", "isolated Guarana ExtractD-Glucuronolactone"]
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
