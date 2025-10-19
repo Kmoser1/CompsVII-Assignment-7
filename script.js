@@ -1,13 +1,12 @@
 console.log("Hello World!");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
-let favFoods = ["raw isolated taurine", "isolated L-Carnitine", "isolated Inositol", "isolated Panax Ginseng Extract", "isolated Guarana ExtractD-Glucuronolactone"]
+let favFoods = ["raw isolated taurine", "isolated L-Carnitine", "isolated Inositol", "isolated Panax Ginseng Extract", "isolated Guarana Extract", "isolated D-Glucuronolactone"];
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
-
-
-
-
+for (let i = 1; i <= 6; i++) {
+  console.log("One of my favorite foods is " + favFoods[i]);
+}
 
 // 3. Print out the rating for each food with a ranking like:
 // "My #1 favorite food is Ramen" (copy/paste for all items)
