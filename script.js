@@ -4,7 +4,7 @@ let favFoods = ["raw isolated taurine", "isolated L-Carnitine", "isolated Inosit
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
-for (let i = 1; i <= 6; i++) {
+for (let i = 0; i <= 5; i++) {
   console.log("One of my favorite foods is " + favFoods[i]);
 }
 
