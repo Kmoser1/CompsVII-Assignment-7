@@ -39,7 +39,7 @@ let friendFavorites = [
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
 // [I'm going to ignore the example, since Pizza has an "a" in the final letter of the string]
-for (let i = 0; i <= friendFavorites.length-1; i++) {
+for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].includes("a")) (
     console.log(friendFavorites[i])
   )
@@ -47,7 +47,7 @@ for (let i = 0; i <= friendFavorites.length-1; i++) {
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
 let foodsWithA = [];
-for (let i = 0; i <= friendFavorites.length-1; i++) {
+for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].includes("a")) (
     foodsWithA.push(friendFavorites[i]));
   }
@@ -55,21 +55,38 @@ console.log(foodsWithA)
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
 let longFoodNames = [];
-for (let i = 0; i <= friendFavorites.length-1; i++) {
+for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].length > 6) (
     longFoodNames.push(friendFavorites[i]));
   }
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
 let shortFoodNames = [];
-for (let i = 0; i <= friendFavorites.length-1; i++) {
+for (let i = 0; i < friendFavorites.length; i++) {
   if (friendFavorites[i].length <= 6) (
     shortFoodNames.push(friendFavorites[i]));
   }
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
+console.log(shortFoodNames);
+console.log(longFoodNames);
 
+
+if (shortFoodNames.length > longFoodNames.length) (
+  console.log("There are more short-named foodsWithA.")
+)
+else if (longFoodNames.length > shortFoodNames.length) (
+  console.log("There are more long-named foods.")
+)
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
+let longestIndex = 0;
+
+for (let i = 0; i < friendFavorites.length; i++) {
+if (friendFavorites[i].length > friendFavorites[longestIndex].length)
+  (longestIndex = i)
+}
+
+console.log("The longest food name in the list is " + friendFavorites[longestIndex] + " with " + friendFavorites[longestIndex].length + " characters.")
